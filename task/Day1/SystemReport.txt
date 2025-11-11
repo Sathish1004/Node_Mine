@@ -1,0 +1,12 @@
+
+💻 System Report
+-------------------
+Host Name: victie
+Platform: win32
+OS Type: Windows_NT
+CPU Cores: 12
+Free Memory: 741.36 MB
+Total Memory: 7521.72 MB
+User: mohan
+Uptime: 4656.4 minutes
+Generated: 4/11/2025, 8:17:01 pm
