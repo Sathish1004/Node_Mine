@@ -18,14 +18,14 @@ export const paramscontroller = (req, res) => {
   }
 
   // Example: return a greeting when user_id is "10"
-  if (user_id == "10") {
+  if (user_id == "10") 
+    {
     return res.status(200).json({
       message: "Hello sathish",
       data: { user_id },
     });
   }
 
-  // If not matched, return a 404 so client knows the id wasn't found
 };
 
 export const querycontroller =(req,res) =>{
@@ -39,3 +39,20 @@ export const querycontroller =(req,res) =>{
     })
     
 }
+
+export const headercontroller = (req, res) => {
+  console.log(req.headers); // view all headers in terminal
+
+  // Extract a custom header (for example: x-api-key or authorization)
+  const { 'x-api-key': apiKey, authorization } = req.headers;
+
+  // Send response
+  res.status(200).json({
+    message: "Header received successfully",
+    data: {
+      apiKey: apiKey || "No API key header found",
+      authorization: authorization || "No Authorization header found"
+    },
+  });
+};
+
